@@ -21,7 +21,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #EDF0DA;
+  background-color: #EBEDD8;
   font-family: 'Josefin Sans', sans-serif;
 
 }
@@ -32,6 +32,9 @@ section {
   width: min(1440px, 90%);
   margin:   auto;
 overflow: hidden;
+display: flex;
+align-items: center;
+justify-content: center;
   }
 
   .hero{
@@ -62,6 +65,7 @@ overflow: hidden;
   nav .container ul {
     display: flex;
     justify-content: flex-start;
+    padding-left: 0;
   }
   nav .container ul li {
   display: inline-block;
@@ -77,8 +81,8 @@ overflow: hidden;
   color: black;
   }
   nav .container ul li.active {
-  background-color: #3b49df;
-  border-radius:30px;
+  background-color: #4BA3C3;
+ 
   transition: 0.3s;
  
 
@@ -88,6 +92,10 @@ overflow: hidden;
   }
 
 
+
+  .act{
+   display: none;
+  }
 
 .home {
 display: flex;
@@ -552,7 +560,6 @@ right: 90px;
 @media only screen and (max-width: 768px) {
 
 
-  
 #menu{
   position: fixed;
   right: 1rem;
@@ -572,7 +579,7 @@ right: 90px;
   width: 100%;
  
   height: 5px;
-  background-color: #5a5a5a;
+  background-color: #EDF0DA ;
   transition: .6s;
 }
 
@@ -581,14 +588,14 @@ right: 90px;
   width: 90%;
   height: 4px;
   margin-top: .7rem;
-background-color: #5a5a5a;
+background-color: #EDF0DA ;
   transition: .6s;
 }
 .menu-line3{
   width: 80%;
   height: 3px;
   margin-top: .7rem;
-background-color: #5a5a5a;
+background-color: #EDF0DA ;
   transition: .6s;
 }
 .dnone{
@@ -598,11 +605,11 @@ background-color: #5a5a5a;
   transform: rotateZ(180deg)
 }
 .rotate1{
-  background: #212121;
+  background: #EDF0DA;
   transform: rotateZ(45deg);
 }
 .rotate2{
-  background: #212121;
+  background: #EDF0DA;
   width: 100%;
   transform:  translate(0,-0.8rem) rotateZ(-45deg);
 }
@@ -610,14 +617,14 @@ background-color: #5a5a5a;
   position: fixed ;
   top:0 ;
   left: 0;
-  background: whitesmoke;
+  background:#353434 ;
   width: 100%;
   height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #212121;
+
   transform: translate(0,-100%);
   transition: .5s;
 }
@@ -628,7 +635,7 @@ background-color: #5a5a5a;
   position: fixed;
   top:0 ;
   left: 60%;
-  background: whitesmoke;
+  background: #353434;
   width: 40%;
   height: 30vh;
   transition: .8s;
@@ -656,6 +663,8 @@ align-items: center;
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin: 0 auto;
+  
   }
 
   .nav-page1 ul{
@@ -731,7 +740,7 @@ right: 40px;
   }
 
   .home-text{
-    width: 95%;
+    width: 90%;
   }
 
   
@@ -775,37 +784,78 @@ right: 20px;
 }
 
 .act{
+display: flex;
+justify-content: space-between;
+align-items: center;
   width: 100%;
   height: 100%;
   opacity: 1;
   transition: all .3s ease-in-out;
   z-index: -1;
+  position: relative;
+  margin: 0 auto;
+  background: #353434;
 }
 .actclose{
 
 transform: translate(0,-150%);
 }
 .actl{
-  position: absolute;
-  top: 0;
-  left: 0;
+
 padding: 0;
-  display: flex;
+height: 100%;
 
   }
 .actl li{
 opacity: 0;
-width: 0;
-
+width: 90%;
+height: 100%;
+position: absolute;
+left: -50px;
+top: 0;
   }
 
-  .actl li.active {
+
+
+
+nav .container .actl li.active {
+  opacity: 1;
+  width: 90%;
   
-    opacity: 1;
-width: 100%;
+  transform: translate(20%,0);
+  background: none;
+  position: absolute;
+  
+}
+nav .container .actl li.active a{
+  color:#EDF0DA ;
+  font-size: 20px;
+ 
+}
+nav .container .actl li img{
+width: 130px;
+height: 30%;
+  
+}
 
-transform: translate(100%,0);
+nav .container .act li a {
+  padding: 0;
+  
+}
+
+.hero{
+  width: 100%;
+}
+nav .container ul li a {
+  color: #EDF0DA;
+}
+#hero{
+  padding-top: 3em;
+}
 
 } 
-} 
+
+
+
+/* project css */
 

@@ -1,5 +1,9 @@
 const sections = document.querySelectorAll("section");
+
 const navLi = document.querySelectorAll("nav .container ul li");
+const KD = document.getElementById("KD");
+
+
 
 window.onload=()=>{
   const $ = document.querySelector.bind(document);
@@ -14,22 +18,68 @@ $('.menu-line1').classList.toggle('rotate1')
  $('.act').classList.toggle('actclose')
  
 }
+
+
+
+KD.classList.add("active")
+
+
+
+
+
 }
 
 
 window.onscroll = () => {
+
+
+
+
+
   var current = "";
+  
+
+
+
 
   sections.forEach((section) => {
     const sectionTop = section.offsetTop;
-    if (pageYOffset >= sectionTop - 60) {
+
+
+    if (pageYOffset >= sectionTop - 80) {
       current = section.getAttribute("id"); }
+
+  
+
+      
+  
+
+
+
   });
 
+
+
+
+
   navLi.forEach((li) => {
+
+
+
     li.classList.remove("active");
+ 
+
     if (li.classList.contains(current)) {
+     
       li.classList.add("active");
+    
+  
     }
+
+
+    
+
   });
+
+
 };
