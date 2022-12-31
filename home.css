@@ -23,7 +23,7 @@ body {
   box-sizing: border-box;
   background-color: #EBEDD8;
   font-family: 'Josefin Sans', sans-serif;
-
+ 
 }
 
 
@@ -649,7 +649,7 @@ background-color: #EDF0DA ;
   nav {
     margin: 0;
     width: 100%;
-    margin: 1em auto;
+    
 margin-top: 0;
 height: 60px;
 border-radius: 0;
